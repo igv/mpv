@@ -210,6 +210,11 @@ Available video output drivers are:
 
     The following global options are supported by this video output:
 
+    ``--vo-direct3d-sharpen=<value>``
+        If set to a value other than 0, enable an unsharp masking filter.
+        Positive values will sharpen the image (but add more ringing and
+        aliasing). Negative values will blur the image.
+
     ``--vo-direct3d-prefer-stretchrect``
         Use ``IDirect3DDevice9::StretchRect`` over other methods if possible.
 
